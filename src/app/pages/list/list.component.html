@@ -1,0 +1,10 @@
+<h1>Maybelline</h1>
+
+<ul *ngIf="products">
+    <li *ngFor="let product of products">
+        <p class="name">{{ product.name }}</p>
+        <img [src]='product.image_link'>
+        <p class="price">$ {{ product.price }}</p>
+        <a class="site" href="{{ product.website_link }}">site</a>
+    </li>
+</ul>
